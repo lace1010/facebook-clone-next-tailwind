@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Feed from "../components/Feed";
-import Header from "../components/header";
+import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import { getSession, useSession } from "next-auth/react";
 import Login from "../components/Login";
