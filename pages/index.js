@@ -5,7 +5,6 @@ import Sidebar from "../components/Sidebar";
 import { getSession, useSession } from "next-auth/react";
 import Login from "../components/Login";
 import Widget from "../components/Widget";
-import { db } from "../firebase";
 
 export default function Home() {
   const { data: session } = useSession();
@@ -31,7 +30,7 @@ export default function Home() {
   return <Login />;
 }
 
-export async function getServersideProps(context) {
+export async function getServerSideProps(context) {
   const session = await getSession(context);
 
   return { props: { session: session } };
