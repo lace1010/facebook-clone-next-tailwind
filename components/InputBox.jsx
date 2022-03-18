@@ -1,9 +1,8 @@
 import { useSession } from "next-auth/react";
 import Image from "next/image";
-import React from "react";
+import { React, useState, useRef } from "react";
 import { EmojiHappyIcon } from "@heroicons/react/outline";
 import { CameraIcon, VideoCameraIcon } from "@heroicons/react/solid";
-import { useRef, useState } from "react/cjs/react.development";
 import { db, storage } from "../firebase";
 
 // This import loads the firebase namespace.

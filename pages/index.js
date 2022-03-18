@@ -9,6 +9,7 @@ import Widget from "../components/Widget";
 export default function Home() {
   const { data: session } = useSession();
 
+  const x = process.env.FACEBOOK_ID;
   if (session) {
     return (
       <div className="h-screen bg-gray-100 overflow-hidden">
@@ -17,7 +18,6 @@ export default function Home() {
         </Head>
 
         <Header />
-
         <main className="flex">
           <Sidebar />
           <Feed />
